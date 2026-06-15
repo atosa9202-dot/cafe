@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>راهنمای قالب | کافه رویال</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Vazir', Tahoma, sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #C6A43F;
+            border-bottom: 2px solid #C6A43F;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-right: 10px;
+            border-right: 4px solid #C6A43F;
+        }
+        h3 {
+            margin: 20px 0 10px 0;
+            color: #555;
+        }
+        code {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 5px;
+            font-family: monospace;
+            direction: ltr;
+            display: inline-block;
+        }
+        pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+            direction: ltr;
+            text-align: left;
+        }
+        .note {
+            background: #FFF3E0;
+            border-right: 4px solid #C6A43F;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        ul, ol {
+            margin-right: 25px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        hr {
+            margin: 30px 0;
+            border: none;
+            border-top: 1px solid #eee;
+        }
+        .footer-note {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #888;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>📄 راهنمای استفاده از قالب <span style="color:#C6A43F;">کافه رویال</span></h1>
+    <p>با تشکر از خرید شما! این قالب یک قالب HTML/CSS خالص، کاملاً ریسپانسیو و آماده برای کافه، رستوران و فست فود است.</p>
+
+    <div class="note">
+        <strong>✅ ساختار فایل‌ها:</strong><br>
+        <code>index.html</code> (خانه) - <code>about.html</code> (درباره ما) - <code>menu.html</code> (منو) - <code>contact.html</code> (تماس)<br>
+        <code>style.css</code> (استایل اصلی) - <code>responsive.css</code> (ریسپانسیو)<br>
+        <code>images/</code> (عکس‌ها) - <code>guide.html</code> (این فایل)
+    </div>
+
+    <h2>۱. تغییر اطلاعات تماس</h2>
+    <p>اطلاعات تماس (شماره تلفن، آدرس، ایمیل) در بخش فوتر تمام صفحات وجود دارد. فایل‌های HTML را باز کرده و مقادیر پیش‌فرض را با اطلاعات خود جایگزین کنید.</p>
+
+    <h2>۲. تغییر عکس‌ها</h2>
+    <p>همه عکس‌ها در پوشه <code>images/</code> قرار دارند. عکس جدید خود را با همان نام قبلی ذخیره کنید یا نام فایل را در کد HTML تغییر دهید.</p>
+
+    <h2>۳. تغییر منو و قیمت‌ها</h2>
+    <p>فایل <code>menu.html</code> را باز کنید. هر آیتم منو به این شکل است:</p>
+    <pre>&lt;div class="menu-item"&gt;
+    &lt;div class="menu-item-img"&gt;
+        &lt;img src="images/your-image.jpg" alt="نام نوشیدنی"&gt;
+    &lt;/div&gt;
+    &lt;div class="menu-item-info"&gt;
+        &lt;h3&gt;نام نوشیدنی&lt;/h3&gt;
+        &lt;p&gt;توضیحات کوتاه&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="menu-item-price"&gt;قیمت تومان&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+    <h2>۴. تغییر رنگ‌ها</h2>
+    <p>فایل <code>style.css</code> را باز کنید. متغیرهای رنگ در ابتدای فایل قرار دارند:</p>
+    <pre>:root {
+    --bg-cream: #FDF8F0;
+    --brown-dark: #3E2723;
+    --gold: #C6A43F;
+}</pre>
+    <p>عددهای هگزادسیمال را با رنگ دلخواه خود عوض کنید.</p>
+    <h2>۵. سوالات متداول</h2>
+    
+    <h3>🔸 چرا عکس‌ها نمایش داده نمی‌شوند؟</h3>
+    <p>حتماً پوشه <code>images</code> در مسیر درست قرار دارد و نام فایل‌ها با نام‌های داخل کد مطابقت دارد.</p>
+
+    <h3>🔸 چطور ریسپانسیو بودن را تست کنم؟</h3>
+    <p>در مرورگر کلید <code>F12</code> را بزنید و حالت موبایل را فعال کنید.</p>
+
+    <h3>🔸 چطور قالب را روی هاست آپلود کنم؟</h3>
+    <p>کل پوشه قالب را با FTP یا کنترل پنل هاست در ریشه آپلود کنید. فایل اصلی <code>index.html</code> است.</p>
+
+    <div class="note">
+        <strong>💡 نکته:</strong> قالب کاملاً با HTML و CSS خالص ساخته شده و برای اجرا نیازی به دیتابیس یا زبان سمت سرور ندارد.
+    </div>
+
+    <hr>
+    <div class="footer-note">
+        © 2026 - قالب کافه رویال | طراحی شده با HTML و CSS خالص
+    </div>
+
+</div>
+</body>
+</html>

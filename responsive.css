@@ -1,0 +1,229 @@
+
+/* ========== فایل ریسپانسیو - مخصوص موبایل و تبلت ========== */
+
+/* تبلت و صفحه‌های کوچک (حداکثر عرض 992 پیکسل) */
+@media (max-width: 992px) {
+    
+    /* صفحه اصلی - گالری */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 100px;
+    }
+    
+    /* صفحه تماس */
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .contact-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* صفحه درباره ما */
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+/* موبایل (حداکثر عرض 768 پیکسل) */
+@media (max-width: 768px) {
+    
+    /* ========== تنظیمات عمومی ========== */
+    .container {
+        padding: 0 15px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    /* ========== هدر ========== */
+    .header-flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /* ========== بنر اصلی ========== */
+    .hero {
+        min-height: 400px;
+    }
+    
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    /* ========== ویژگی‌ها ========== */
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* ========== منوی محبوب ========== */
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    /* ========== گالری ========== */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    /* ========== نظرات ========== */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* ========== فوتر ========== */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    /* ========== صفحه درباره ما ========== */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+    
+    .about-text h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .about-text h2::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .about-text p {
+        text-align: center;
+    }
+    
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* ========== صفحه منو ========== */
+    .category-title {
+        font-size: 22px;
+        display: block;
+        text-align: center;
+    }
+    
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 20px 0;
+    }
+    
+    .menu-item:hover {
+        padding-right: 0;
+    }
+    
+    .menu-item-img {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+    }
+    
+    .menu-item-info {
+        text-align: center;
+    }
+    
+    .menu-item-price {
+        text-align: center;
+    }
+    
+    /* ========== صفحه تماس ========== */
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-form-box {
+        padding: 25px;
+    }
+    
+    /* ========== صفحه عنوان (header صفحات) ========== */
+    .page-header {
+        padding: 50px 0;
+    }
+    
+    .page-header h1 {
+        font-size: 32px;
+    }
+    
+    .page-header p {
+        font-size: 16px;
+    }
+    
+    /* ========== آمار ========== */
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .stat-number {
+        font-size: 36px;
+    }
+}
+
+/* موبایل خیلی کوچک (حداکثر عرض 480 پیکسل) */
+@media (max-width: 480px) {
+    
+    .container {
+        padding: 0 12px;
+    }
+    
+    .hero-content h1 {
+        font-size: 24px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+        }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .page-header h1 {
+        font-size: 26px;
+    }
+    
+    .menu-item-img {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .menu-item-info h3 {
+        font-size: 16px;
+    }
+    
+    .menu-item-price {
+        font-size: 14px;
+    }
+}
